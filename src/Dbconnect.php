@@ -41,7 +41,7 @@ class Dbconnect
      * method for setting the table
      * @param $tableName
      */
-    protected function setTable($tableName)
+    public function setTable($tableName)
     {
         $this->table=$tableName;
     }
@@ -114,7 +114,7 @@ class Dbconnect
     }
 
     /** method to insert data */
-    protected function insert($data)
+    public function insert($data)
     {
         if(!is_array($data))
         {
