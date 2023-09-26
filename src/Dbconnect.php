@@ -1,4 +1,5 @@
 <?php
+namespace Rtgroup\Dbconnect;
 
 class Dbconnect
 {

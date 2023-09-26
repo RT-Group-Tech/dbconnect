@@ -2,6 +2,7 @@
 /**
  * Class gérant la configuration de la configuration d'une base de donnée.
  */
+namespace Rtgroup\Dbconnect;
 
 class Dbconfig
 {
