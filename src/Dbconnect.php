@@ -452,4 +452,9 @@ class Dbconnect
         return $newphrase       =str_replace($caractereAremplacer, $caractereReplace, $data);
     }
 
+    private function checkLanguage()
+    {
+        return "Mysqli";
+    }
+
 }
