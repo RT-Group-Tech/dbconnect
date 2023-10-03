@@ -1,6 +1,8 @@
 <?php
 namespace Rtgroup\Dbconnect;
 
+use Exception;
+
 class Dbconnect
 {
     private $dbConfig;
@@ -186,7 +188,7 @@ class Dbconnect
      * Method pour selection les données d'une table à joindre
      * @param $table =>la table
      * @param array $cols => les colonnes à selectionner
-     * @return Model
+     * @return Dbconnect
      */
     public function selectJoin($table,array $cols)
     {
@@ -216,7 +218,7 @@ class Dbconnect
      * @param $table_1
      * @param $table_2
      * @param $onCol => colonne à joindre
-     * @return Model
+     * @return Dbconnect
      * @throws Exception
      */
     public function join($table_1,$table_2,$onCol)
