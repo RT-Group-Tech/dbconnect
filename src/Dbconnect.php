@@ -56,7 +56,7 @@ class Dbconnect
      * @return array|bool|int|string
      * @throws Exception
      */
-    protected function execute($query)
+    public function execute($query)
     {
         /** determine what to expect in return after sql execution */
         $returnOption=array("SELECT"=>'data',"INSERT"=>'lastRowId',"UPDATE"=>'bool',
