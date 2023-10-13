@@ -195,7 +195,18 @@ class Dbconnect
         $sql="";
         for($i=0; $i<count($cols); $i++)
         {
-            $sql=$sql.$table.".".$cols[$i]." as ".$cols[$i];
+            if(strstr($cols[$i],"=>"))
+            {
+                $cols[$i]=str_replace("=>"," as ",$cols[$i]);
+
+                $sql=$sql.$table.".".$cols[$i];
+
+            }
+            else
+            {
+                $sql=$sql.$table.".".$cols[$i]." as ".$cols[$i];
+            }
+
 
             if($i<count($cols)-1)
             {
